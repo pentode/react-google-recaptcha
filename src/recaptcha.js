@@ -64,6 +64,9 @@ const ReCAPTCHA = React.createClass({
         widgetId: id,
       }, cb);
     }
+    else if (this.props.reset) {
+      this.reset();
+    }
   },
 
   componentDidMount() {
